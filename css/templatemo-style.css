@@ -83,6 +83,13 @@ CSS SITEMAP >>>>
 	animation-iteration-count: infinite;
 }
 
+@media only screen and (max-width: 600px) {
+	.animate-text::after {
+		font-size: 3rem;
+
+	}
+}
+
 /*==============================================
 01. GENERAL CSS
 ================================================*/
@@ -816,7 +823,7 @@ a#logo {
 }
 
 .portfolio-item:hover .thumb-inner h4 {
-	margin-top: 30%;
+	margin-top: 20px;
 	color: #1e1e1e;
 	margin-bottom: 20px;
 }
@@ -1085,4 +1092,8 @@ textarea.form-control {
 	width: 8rem;
 	display: flex;
 	align-items: center;
+}
+
+.portfolio-item .thumb-inner h4 {
+	color: var(--gray-dark);
 }
